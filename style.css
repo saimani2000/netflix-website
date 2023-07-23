@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+@media(max-width: 660px){
+
+}
+    
+
+body {
+    background-color: #00081D;
+    color: #fff;
+
+}
+
+/-------------------------------Navbar------------------------------------------------/
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+
+}
+
+nav.english {
+    background-color: transparent;
+    border-color: #fff;
+    border: white;
+
+}
+
+.header {
+    width: 70rem;
+    height: 100vh;
+    background-image: radial-gradient(93.75% 105.88% at 0.39% 99.26%, rgba(150, 1, 7, 0.4) 1.42%, rgba(30, 1, 66, 0.51) 53.8%, rgba(13, 14, 32, 0) 100%), linear-gradient(98.24deg, #1D0005 14.75%, rgba(0, 8, 29, 0.48)), url();
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    border-radius: 2rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+/*-- ---------------------features-------------------------------- */
+.features {
+    padding: 40px 15%;
+    font-size: 15px;
+    background-color: ;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0%;
+}
+
+.text col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.features h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+hr {
+    width: 60rem;
+    margin-left: 8rem;
+    height: 10%;
+    border-color: #777;
+    border-radius: 2rem;
+    background-color: #777;
+
+}
+
+/--------------------------------Faq----------------------------------------/
+.faq {
+    padding: 10px 12%;
+    font-size: 10px;
+
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.accordation {
+    margin-left: 2.2rem;
+    width: 100%;
+    max-width: 100rem;
+}
+
+.accordation li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordation li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #132144;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+
+}
+
+input[type=radio] {
+    display: none;
+
+}
+
+.faq .accordation .content {
+    background-color: #132144;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.5s padding 0.5s;
+}
+
+.accordation input[type=radio]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+accordation input[type=radio]:checked+label::before {
+    max-height: 0px;
+    padding: 30px 20px;
+
+}
+
+.accordation input[type=radio]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+/-------------------------------footer------------------------------------------------/
+
+.footer {
+    padding: 50px 15% 10px;
+}
+
+.footer h1 {
+    font-size: 18px;
+    font-weight: 400;
+    /color: #fff;/
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+
+.footer .col {
+    flex-basis: 25%;
+
+    flex-grow: 1;
+    margin-bottom: 10px;
+
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+    display: flex;
+}
+
+.footer .col a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.header p {
+    padding-top: 3rem;
+    color: #fff;
+}
+
+.header-content input {
+    height: 3rem;
+    width: 25rem;
+    border-color: #fff;
+    background-color: #111;
+    border-radius: 0.3rem;
+
+}
+
+.submit {
+    background-color: red;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 18px;
+
+
+}
+
+.header-content {
+    padding-top: 10rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.end {
+    margin-left: 11.5rem;
+
+}
+
+.end p {
+    padding-top: 1rem;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 1rem;
+
+}
+
+.end-content input {
+    height: 3rem;
+    width: 25rem;
+    border-color: #fff;
+    background-color: #111;
+    border-radius: 0.3rem;
+
+}
+
+.end.submit {
+    background-color: red;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 18px;
+
+
+}
